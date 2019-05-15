@@ -14,28 +14,28 @@ let app = new Vue({
 	}
 });
 
-will render inside its root element : <div id="app"></div>
+will render inside its root element : &lt;div id="app"&gt;&lt;/div&gt;
 
 You can use mustache : {{messsage}} where message = "Hello world"
-or directive v-text : <span v-text="message"></span> where message = "Hello world"
-or v-html : <span v-html="message"></span> where message = "<b>Hello world</b>"
+or directive v-text : &lt;span v-text="message"&gt;&lt;/span&gt; where message = "Hello world"
+or v-html : &lt;span v-html="message"&gt;&lt;/span&gt; where message = "&lt;b&gt;Hello world&lt;/b&gt;"
 
-if you want a not mutable : <span v-once>{{messsage}}</span>
+if you want a not mutable : &lt;span v-once&gt;{{messsage}}&lt;/span&gt;
 message will never change.
 
 ### render an attribute
 
-<a href="{{url}}">click</a> won't work
+&lt;a href="{{url}}"&gt;click&lt;/a&gt; won't work
 
 use
 
-<a v-bind:href="url">click</a>
+&lt;a v-bind:href="url"&gt;click&lt;/a&gt;
 
-### We can render javascript : <p>Points : {{result - 2}}<p> will render 10
+### We can render javascript : &lt;p&gt;Points : {{result - 2}}&lt;p&gt; will render 10
 
 Other examples :
 
-<p>Graduate : {{result >= 10 ? 'YES' : 'NO'}}<p>
+&lt;p&gt;Graduate : {{result &gt;= 10 ? 'YES' : 'NO'}}&lt;p&gt;
 
 ## Conditionals 
 
