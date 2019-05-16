@@ -152,7 +152,7 @@ function appInit(){
 		}
 	});
 }
-<pre>
+```
 <div id="app">
 	<div>
 		<input v-model="message" placeholder="Tell me something" type="text"/><br/>
@@ -196,7 +196,7 @@ function appInit(){
 		<p>{{selectedItems}}</p>
 	</div>
 </div>
-</pre>
+```
 
 ## Events
 
