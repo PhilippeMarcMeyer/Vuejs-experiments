@@ -21,9 +21,50 @@
     </head>
     
     <body>
-    <div id="root">
-		{{ message }}
-    </div>
+		<div id="app">
+			<div>
+				<input v-model="message" placeholder="Tell me something" type="text"/><br/>
+				{{message}}
+			</div>
+			<div>
+				<input v-model="checked"  type="checkbox"/><br/>
+				{{checked}}
+			</div>
+			
+			<div>
+				<input v-model="checkedNames" value="Renata" type="checkbox"/>
+				<label>Renata</label>
+				<input v-model="checkedNames" value="Anton" type="checkbox"/>
+				<label>Anton</label>
+				<input v-model="checkedNames" value="Laurence" type="checkbox"/>
+				<label>Laurence</label>
+				<p>{{checkedNames}}</p>
+			</div>
+			<div>
+				<input v-model="selectedName" value="Renata" type="radio"/>
+				<label>Renata</label>
+				<input v-model="selectedName" value="Anton" type="radio"/>
+				<label>Anton</label>
+				<input v-model="selectedName" value="Laurence" type="radio"/>
+				<label>Laurence</label>
+				<input v-model="selectedName" value="" type="radio"/>
+				<label>None</label>
+				<p>{{selectedName}}</p>
+			</div>
+			<div>
+				<select v-model="selectedItem"  >
+					<option v-for="item in items" v-bind:value="item.key">{{item.localized}}</option>
+				</select>
+				<p>{{selectedItem}}</p>
+			</div>
+			<div>
+				<select v-model="selectedItems" multiple length="3" >
+					<option v-for="item in items" v-bind:value="item.key">{{item.localized}}</option>
+				</select>
+				<br/>
+				<p>{{selectedItems}}</p>
+			</div>
+		</div>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 		<script src="app.js"></script>
