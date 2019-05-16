@@ -152,50 +152,51 @@ function appInit(){
 		}
 	});
 }
-
-&lt;div id="app"&gt;
-	&lt;div&gt;
-		&lt;input v-model="message" placeholder="Tell me something" type="text"/&gt;&lt;br/&gt;
+<pre>
+<div id="app">
+	<div>
+		<input v-model="message" placeholder="Tell me something" type="text"/><br/>
 		{{message}}
-	&lt;/div&gt;
-	&lt;div&gt;
-		&lt;input v-model="checked"  type="checkbox"/&gt;&lt;br/&gt;
+	</div>
+	<div>
+		<input v-model="checked"  type="checkbox"/><br/>
 		{{checked}}
-	&lt;/div&gt;
-	&lt;div&gt;
-		&lt;input v-model="checkedNames" value="Renata" type="checkbox"/&gt;
-		&lt;label&gt;Renata&lt;/label&gt;
-		&lt;input v-model="checkedNames" value="Anton" type="checkbox"/&gt;
-		&lt;label&gt;Anton&lt;/label&gt;
-		&lt;input v-model="checkedNames" value="Laurence" type="checkbox"/&gt;
-		&lt;label&gt;Laurence&lt;/label&gt;
-		&lt;p&gt;{{checkedNames}}&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div&gt;
-		&lt;input v-model="selectedName" value="Renata" type="radio"/&gt;
-		&lt;label&gt;Renata&lt;/label&gt;
-		&lt;input v-model="selectedName" value="Anton" type="radio"/&gt;
-		&lt;label&gt;Anton&lt;/label&gt;
-		&lt;input v-model="selectedName" value="Laurence" type="radio"/&gt;
-		&lt;label&gt;Laurence&lt;/label&gt;
-		&lt;input v-model="selectedName" value="" type="radio"/&gt;
-		&lt;label&gt;None&lt;/label&gt;
-		&lt;p&gt;{{selectedName}}&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div&gt;
-		&lt;select v-model="selectedItem"  &gt;
-			&lt;option v-for="item in items" v-bind:value="item.key"&gt;{{item.localized}}&lt;/option&gt;
-		&lt;/select&gt;
-		&lt;p&gt;{{selectedItem}}&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div&gt;
-		&lt;select v-model="selectedItems" multiple length="3" &gt;
-			&lt;option v-for="item in items" v-bind:value="item.key"&gt;{{item.localized}}&lt;/option&gt;
-		&lt;/select&gt;
-		&lt;br/&gt;
-		&lt;p&gt;{{selectedItems}}&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
+	</div>
+	<div>
+		<input v-model="checkedNames" value="Renata" type="checkbox"/>
+		<label>Renata</label>
+		<input v-model="checkedNames" value="Anton" type="checkbox"/>
+		<label>Anton</label>
+		<input v-model="checkedNames" value="Laurence" type="checkbox"/>
+		<label>Laurence</label>
+		<p>{{checkedNames}}</p>
+	</div>
+	<div>
+		<input v-model="selectedName" value="Renata" type="radio"/>
+		<label>Renata</label>
+		<input v-model="selectedName" value="Anton" type="radio"/>
+		<label>Anton</label>
+		<input v-model="selectedName" value="Laurence" type="radio"/>
+		<label>Laurence</label>
+		<input v-model="selectedName" value="" type="radio"/>
+		<label>None</label>
+		<p>{{selectedName}}</p>
+	</div>
+	<div>
+		<select v-model="selectedItem"  >
+			<option v-for="item in items" v-bind:value="item.key">{{item.localized}}</option>
+		</select>
+		<p>{{selectedItem}}</p>
+	</div>
+	<div>
+		<select v-model="selectedItems" multiple length="3" >
+			<option v-for="item in items" v-bind:value="item.key">{{item.localized}}</option>
+		</select>
+		<br/>
+		<p>{{selectedItems}}</p>
+	</div>
+</div>
+</pre>
 
 ## Events
 
