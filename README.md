@@ -17,19 +17,12 @@ https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA
 ## Interpolation
 
 let app = new Vue({
-
 	el:'#app',
-	
 	data:{
-	
 		message:'Hello world",
-		
 		url : 'https://www.eduonix.com',
-		
 		result : 12
-		
 	}
-	
 });
 
 will render inside its root element : &lt;div id="app"&gt;&lt;/div&gt;
