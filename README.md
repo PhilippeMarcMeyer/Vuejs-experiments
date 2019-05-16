@@ -57,31 +57,29 @@ Other examples :
 
 ### Loops :
 
-
 in app.data we got an array of users
 
-<pre>
 &lt;ul&gt;
-	<li v-for="user in users">{{user.name}}</li>
+	&lt;li v-for="user in users"&gt;{{user.name}}&lt;/li&gt;
 &lt;/ul&gt;
 
-// with an index :
+with an index 
 
-<ul>
-	<li v-for="(user,index) in users">{{index}} {{user.name}}</li>
-</ul>
+&lt;ul&gt;
+	&lt;li v-for="(user,index) in users"&gt;{{index}} {{user.name}}&lt;/li&gt;
+&lt;/ul&gt;
 
-//the index can be useful to provide DOM ids
+the index can be useful to provide DOM ids
 
-//v-for works with objects as well
+v-for works with objects as well
 
-<div v-for="(value,key,index) in user">
-	
-</div>
+&lt;div v-for="(value,key,index) in user"&gt;
+	...
+&lt;/div&gt;
 
-// Integers :
+Integers :
 
-<div v-for="n in 10">{{n}}</div>
+&lt;div v-for="n in 10"&gt;{{n}}&lt;/div&gt;
 
 1
 
@@ -89,7 +87,7 @@ in app.data we got an array of users
 
 3
 
-</pre>
+...
 
 ### Conditionals :
 
