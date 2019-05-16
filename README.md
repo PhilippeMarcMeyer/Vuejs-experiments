@@ -162,7 +162,6 @@ function appInit(){
 		&lt;input v-model="checked"  type="checkbox"/&gt;&lt;br/&gt;
 		{{checked}}
 	&lt;/div&gt;
-	
 	&lt;div&gt;
 		&lt;input v-model="checkedNames" value="Renata" type="checkbox"/&gt;
 		&lt;label&gt;Renata&lt;/label&gt;
