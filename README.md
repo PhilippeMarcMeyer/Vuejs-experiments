@@ -59,28 +59,29 @@ Other examples :
 
 in app.data we got an array of users
 
-&lt;ul&gt;
-	&lt;li v-for="user in users"&gt;{{user.name}}&lt;/li&gt;
-&lt;/ul&gt;
-
+```
+<ul>
+	<li v-for="user in users">{{user.name}}</li>
+</ul>
+```
 with an index 
-
-&lt;ul&gt;
-	&lt;li v-for="(user,index) in users"&gt;{{index}} {{user.name}}&lt;/li&gt;
-&lt;/ul&gt;
-
+```
+<ul>
+	<li v-for="(user,index) in users">{{index}} {{user.name}}</li>
+</ul>
+```
 the index can be useful to provide DOM ids
 
 v-for works with objects as well
-
-&lt;div v-for="(value,key,index) in user"&gt;
+```
+<div v-for="(value,key,index) in user">
 	...
-&lt;/div&gt;
-
+</div>
+```
 Integers :
-
-&lt;div v-for="n in 10"&gt;{{n}}&lt;/div&gt;
-
+```
+<div v-for="n in 10">{{n}}</div>
+```
 1
 
 2
@@ -93,21 +94,22 @@ Integers :
 
 in app.data we got a status set to true :
 
+```javascript
 let app = new Vue({
 	el:'#app',
 	data:{
 		status : true
 	}
 });
-
-&lt;h1 v-if="status"&gt;
+```
+```
+<h1 v-if="status">
 	Status is True
-&lt;/h1&gt;
-
-&lt;h1 v-else&gt;
+</h1>
+<h1 v-else>
 	Status is False
-&lt;/h1&gt;
-
+</h1>
+```
 if you got multiple conditions then use v-else-if="condition"
 
 ## Class & Style Binding
