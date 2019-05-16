@@ -16,7 +16,7 @@ https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA
 
 ## Interpolation
 
-<pre>
+```javascript
 let app = new Vue({
 	el:'#app',
 	data:{
@@ -25,7 +25,7 @@ let app = new Vue({
 		result : 12
 	}
 });
-</pre>
+```
 
 will render inside its root element : &lt;div id="app"&gt;&lt;/div&gt;
 
