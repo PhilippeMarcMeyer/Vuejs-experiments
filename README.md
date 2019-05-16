@@ -60,13 +60,17 @@ Other examples :
 in app.data we got an array of users
 
 &lt;ul&gt;
+
 	&lt;li v-for="user in users"&gt;{{user.name}}&lt;/li&gt;
+	
 &lt;/ul&gt;
 
 with an index 
 
 &lt;ul&gt;
+
 	&lt;li v-for="(user,index) in users"&gt;{{index}} {{user.name}}&lt;/li&gt;
+	
 &lt;/ul&gt;
 
 the index can be useful to provide DOM ids
