@@ -30,10 +30,13 @@ let app = new Vue({
 will render inside its root element : &lt;div id="app"&gt;&lt;/div&gt;
 
 You can use mustache : {{messsage}} where message = "Hello world"
+
 or directive v-text : &lt;span v-text="message"&gt;&lt;/span&gt; where message = "Hello world"
+
 or v-html : &lt;span v-html="message"&gt;&lt;/span&gt; where message = "&lt;b&gt;Hello world&lt;/b&gt;"
 
 if you want a not mutable : &lt;span v-once&gt;{{messsage}}&lt;/span&gt;
+
 message will never change.
 
 ### render an attribute
