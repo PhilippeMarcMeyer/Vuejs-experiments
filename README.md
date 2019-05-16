@@ -61,9 +61,9 @@ Other examples :
 in app.data we got an array of users
 
 <pre>
-<ul>
+&lt;ul&gt;
 	<li v-for="user in users">{{user.name}}</li>
-</ul>
+&lt;/ul&gt;
 
 // with an index :
 
