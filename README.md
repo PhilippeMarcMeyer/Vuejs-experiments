@@ -114,24 +114,25 @@ if you got multiple conditions then use v-else-if="condition"
 
 ### Class binding
 
-&lt;div v-bind:class="{active:isActive}"&gt;Hello World!&lt;/div&gt;
-
-You can use the shortcut for v-bind =&gt; :
-
-&lt;div :class="{active: isActive,inactive: !isActive}"&gt;Hello World!&lt;/div&gt;
-
+```
+<div v-bind:class="{active:isActive}">Hello World!</div>
+```
+You can use the shortcut for v-bind => :
+```
+<div :class="{active: isActive,inactive: !isActive}">Hello World!</div>
+```
 and put several conditions 
 
 you can set multiple classes for 1 condition : 
-
-&lt;div v-bind:class="{[active,selected]:isActive}"&gt;Hello World!&lt;/div&gt;
-
+```
+<div v-bind:class="{[active,selected]:isActive}">Hello World!</div>
+```
 you can bind style and any other element like data-, id, type etc..
 
 ## Input Binding & forms
 
+```javascript
 let app;
-
 function appInit(){
 	app = new Vue({
 		el:'#app',
@@ -152,6 +153,8 @@ function appInit(){
 		}
 	});
 }
+```
+
 ```
 <div id="app">
 	<div>
